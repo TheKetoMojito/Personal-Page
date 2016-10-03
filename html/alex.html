@@ -6,15 +6,20 @@
 		<title>Alex Petrovich</title>
 	</head>
 	<body style="background-color: black; color:white">
-		<div>
-		 	<ul class="nav nav-tabs">
-		   		<li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
-		   		<li class><a href="#Resume" data-toggle="tab">Resume</a></li>
-		   		<li class><a href="#Websites" data-toggle="tab">Websites</a></li>
-		 	</ul>
+		<div style="height:100%">
+			<div style="width:100%"> 
+			 	<ul class="nav nav-tabs nav-justified">
+			   		<li class="active"><a href="#About" data-toggle="tab">About</a></li>
+			   		<li class><a href="#Resume" data-toggle="tab">R&eacute;sum&eacute;</a></li>
+			   		<li class><a href="#Websites" data-toggle="tab">Websites</a></li>
+			 	</ul>
+		 	</div>
 		 	<div class="tab-content">
-		    	<div class="tab-pane fade in active" id="Home"><p>A</p></div>
-		    	<div class="tab-pane fade" id="Resume"><p>B</p></div>
+		    	<div class="tab-pane fade in active" id="About"><p>A</p></div>
+		    	<div class="tab-pane fade" id="Resume" style="margin-right: 10%; margin-left: 10%;height: 90%">
+		    		<style>.pdfobject{border:1px solid white;}</style>
+  					<script src="../js/pdfobject.min.js"></script>
+					<script>PDFObject.embed("alex_petrovich_resume.pdf", "#Resume");</script></div>
 		    	<div class="tab-pane fade" id="Websites"><p>C</p></div>
 		 	</div>
 		</div>	
