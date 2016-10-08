@@ -1,0 +1,9 @@
+.nav .nav-tabs {
+	display: inline-block;
+	float: center;
+ 	text-align: center;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
