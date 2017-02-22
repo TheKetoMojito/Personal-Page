@@ -1,0 +1,189 @@
+a {
+	text-decoration: none;
+	color: rgb(183, 183, 183);
+	font-family: Century Gothic, sans-serif;
+}
+
+a:hover {
+	color: black;
+}
+
+body {
+	background-color: white;
+	color:black;
+	margin: 0px;
+	font-family: Verdana;
+	transition-delay: 0.2s;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+h3 {
+	margin-left: 5px;
+}
+
+p {
+	/*margin: 5px;*/
+}
+
+hr {
+	margin: 0px;
+	size: 2px;
+	border-color:green;
+}
+
+#page-container {
+	width: auto;
+	height: auto;
+}
+
+#side-container {
+	width:20%;
+	height:100%;
+	position: fixed;
+	float: left;
+	padding: 5px;
+}
+
+#profile-container {
+	width: 100%;
+}
+
+#image-container {
+	width: auto;
+	height: auto;
+}
+
+#profile-img {
+	border-radius: 5%;
+}
+
+.side-text-container {
+	height: auto;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.side-text-entry {
+	font-size: 12;
+	font-size: 1vw;
+}
+
+.side-text-entry-left {
+	float:left;
+	width:50%;
+}
+
+.side-text-entry-right {
+	float:right;
+	width: 50%;
+	text-align: right;
+}
+
+.side-link {
+	display: inline-block;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	  
+	&:hover {
+		transform: translateY(-3px);
+		color: lighten(#03c, 15%);
+	}
+}
+
+#content-container {
+	float: right;
+	position: relative;
+	width: -moz-calc(80% - 40px);
+	width: -webkit-calc(80% - 40px);
+	width: -o-calc(80% - 40px);
+	width: calc(80% - 40px);
+	height: auto;
+	margin-right: 20px;
+}
+
+.project-container {
+	width: 100%;
+	height: 50%;
+}
+
+#navigation-container {
+	width: 100%;
+	height: 70px;
+}
+
+#name-container {
+	float: left;
+	max-width: 50%;
+	margin: 0px;
+}
+
+#button-container {
+	width: auto;
+	height: 100%;
+	float: right;
+}
+
+.button {
+	vertical-align: middle;
+	position: relative;
+	float: right;
+	margin: 20px;
+	margin-top: 25px;
+	color: rgb(183, 183, 183);
+	transition: all 0.3s ease 0s;
+}
+
+.linkedin {
+	padding-left: 2.2em;
+}
+
+.linkedin:before {
+	content: "\f08c";
+	left: 1em;
+}
+
+.github {
+	padding-right: 2.2em;
+}
+
+.github:before {
+	content: "\f092";
+	right: 1em;
+}
+
+/* This css class is from Hover.css obtained from https://github.com/IanLunn/Hover*/
+.hvr-icon-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-icon-grow:before {
+  position: absolute;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-icon-grow:hover:before, .hvr-icon-grow:focus:before, .hvr-icon-grow:active:before {
+  -webkit-transform: scale(1.3) translateZ(0);
+  transform: scale(1.3) translateZ(0);
+}
