@@ -1,23 +1,42 @@
 <div class="post-container">
-	<div class="content">
+	<div class="content-title">
 		<h3>SmartWatch Controlled Skateboard</h3>
 	</div>
-</div>	
+	<div class="content-image">
+		<img src="../res/img/wearhacks.jpg">
+	</div>
+	<div class="content-text">
+		<h5>Description:</h5>
+		<p>
+			A motorized skateboard controlled by a Pebble SmartWatch.
+		</p>
+		<h5>Technologies:</h5>
+		<p>
+			C, NodeJS, Microcontrollers
+		</p>
+		<h5>Implementation:</h5>
+		<ul>
+			<li>A pebble application listens for button presses. On each event, a message is sent to a connected Android application.</li>
+			<li>The Android app relays the data to a NodeJS server hosted on an Intel Edison microcontroller.</li>
+			<li>The Edison interpretes the signal and adjusts electrical output to the motor.</li>
+		</ul>
+	</div>
+</div>
 <hr>
 <div class="post-container">
-	<div class="content">
+	<div class="content-title">
 		<h3>Serenity Now</h3>
 	</div>
 </div>
 <hr>
 <!-- <div class="post-container">
-	<div class="content">
+	<div class="content-title">
 		<h3>Image Scrambler</h3>
 	</div>
 </div>
 <hr> -->
 <div class="post-container">
-	<div class="content">
+	<div class="content-title">
 		<h3>League Ping Analyzer</h3>
 	</div>
 </div>

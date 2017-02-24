@@ -1,22 +1,17 @@
-var activeButton = "home";
+var buttonState = {
+	buttons : ["home", "resume", "projects"],
+	activeButton : "home"
+}
 
 $( document ).ready(function() {
 	$("#insertable").load("../html/include/home.html");
     main();
 });
 
-
 var main = function() {
-	var buttons = ["home", "resume", "projects"];
-	darkenActiveButton(buttons);
-	setOnHover(buttons);
-	setOnClick(buttons);
-}	
-
-var lightenAllButtons = function(buttons) {
-	buttons.forEach(function(button) {
-		lightenButton(button);
-	});
+	darkenActiveButton();
+	setOnHover(buttonState.buttons);
+	setOnClick(buttonState.buttons);
 }
 
 var lightenButton = function(button) {
@@ -28,7 +23,13 @@ var darkenButton = function(button) {
 }
 
 var darkenActiveButton = function() {
-	darkenButton(activeButton);
+	darkenButton(buttonState.activeButton);
+}
+
+var lightenAllButtons = function(buttons) {
+	buttons.forEach(function(button) {
+		lightenButton(button);
+	});
 }
 
 var setOnHover = function(buttons) {
@@ -37,8 +38,9 @@ var setOnHover = function(buttons) {
 			darkenButton(button);
 		});
 		$("#" + button).mouseout(function(){
-			lightenAllButtons(buttons);
-			darkenActiveButton();
+			if (buttonState.activeButton != button) {
+				lightenButton(button);
+			}
 		});
 	});
 }
@@ -47,8 +49,9 @@ var setOnClick = function(buttons) {
 	buttons.forEach(function(button) {
 		$("#" + button).click(function(){
             $("#insertable").load("../html/include/" + button + ".html");
-			activeButton = button;
+
 			lightenAllButtons(buttons);
+			buttonState.activeButton = button;
 			darkenActiveButton();
 		});
 	});
