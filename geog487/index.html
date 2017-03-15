@@ -1,0 +1,54 @@
+<!--GEOG487 Group 10 (Alex Petrovich, Tong Wu, Philemon Cheung, Vincent Dao)-->
+<html>
+	<head>
+		<title>Bikeability - Hazards Reporter</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+		<link rel="stylesheet" href="css/index.css"/>
+
+		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<center>
+			<div id="title">
+				<h2>Report Bikeability Hazards</h2>
+			</div>
+			<div id="main-container">
+				<div id="mapid"></div>
+				<div id="form-and-submit">
+					<div id="form">
+						<div class="label">Latitude</div>
+						<input class="field" id="lat">
+						<div class="label">Longitude</div>
+						<input class="field" id="lng">	
+						<div class="label">Description</div>
+						<textarea class="field" id="desc"> </textarea>
+						<div class="label">Category</div>
+						<select class="field" id="cat">
+						  <option value="blocked sidewalk">Blocked Sidewalk</option>
+						  <option value="no sidewalk slab">No Sidewalk Slab</option>
+						  <option value="steep slope">Steep Slope</option>
+						  <option value="trip hazard">Trip Hazard</option>
+						  <option value="other">Other</option>
+						</select>
+					</div>
+					<div id="submit-container">
+						<div id="loader">
+							<div id="gif">
+							</div>
+						</div>
+						<div id="submit">
+							<div id="submit-button">SUBMIT</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="blurb">
+				<p>Created by: Group 7 (Alex Petrovich, Tong Wu, Philemon Cheung, Vincent Dao)</p>
+				<p>Sources: Leaflet, OpenStreetMap</p>
+			</div>
+		</center>
+	</body>
+</html>

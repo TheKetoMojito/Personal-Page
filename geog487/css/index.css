@@ -1,0 +1,106 @@
+#mapid {
+	height: 80%;
+	width: 70%;
+	border: solid 1px black;
+	float:left;
+}
+
+#form-and-submit {
+	margin-left: 5px;
+	float: left;
+	height: auto;
+	width: 25%;
+}
+
+#form {
+	float: left;
+	height: auto;
+	width: 100%;
+	border: solid 1px black;
+	padding: 5px;
+}
+
+#submit-container {
+	width: 100%;
+	float: left;
+	padding: 5px;
+	min-height: 10px;
+}
+
+#loader {
+	width: 65%;
+	float: left;
+}
+
+#loading-error {
+	width: auto;
+	color: red;
+	font-size: 0.8em;
+}
+
+#loading-img {
+	width: 28px;
+	height: 28px;
+}
+
+#submit {
+	width: 30%;
+	min-width: 70px;
+	float: right;
+	margin: 0;
+}
+
+#submit-button {
+	font-family: "Courier New";
+	padding: 5px;
+	color: white;
+	background-color: rgb(59, 211, 249);
+	border-radius: 5px;
+	-webkit-user-select: none;     
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none;
+	user-select: none;
+}
+
+#submit-button:hover {
+	background-color: rgb(43, 102, 219);
+}
+
+#submit-button:click {
+	background-color: 
+}
+
+#blurb {
+	float: left;
+	text-align: left;
+	height: 10%;
+	width: 90%;
+}
+
+#title {
+	height: auto;
+	width: 90%;
+	text-align: center;
+}
+
+#gif {
+	float:right;
+}
+
+.field {
+	margin-bottom:5px;
+	width: 80%;
+}
+
+.label {
+	width: 100%;
+	text-align: left;
+	text-align: top;
+}
+
+#desc {
+	min-height: 10%;
+	max-height: 20%;
+	max-width: 80%;
+}
