@@ -124,6 +124,7 @@ h3 {
 
 .content-image img {
 	border-radius: 5%;
+	border: 1px solid black;
 }
 
 .content-text {
